@@ -71,24 +71,50 @@ a:hover{
 	overflow: auto;
 }
 
-#top {
-	height: 20px;
-	width: 100%;
-	top: 0px;
-}
-
-
 /*
 	Header /w menu
 */
+header {
+	/*background-image: url(../img/header-back.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;*/
+	/*background: linear-gradient(to right, #C1C1C1, #E6E6E6);*/
+	height: 100px;
+	background-color: rgb(31,31,31);
+	/*background-image: url(../img/header-bg.png);*/
+	background-repeat: no-repeat;
+	background-position: left center;
+	min-width: 1080px;
+}
+
+#header {
+	width: 960px;
+	margin:auto;
+}
+
+#header_logo {
+	top: 50%;
+	height: 70px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+
 nav {
 	font-family: octin;
 	height: 40px;
 	width: 100%;
-	position: fixed;
-    top: 0px !important;
+	/*position: fixed;*
+    top: 0px !important;*/
 	background-color: #000;
 	line-height: 40px;
+}
+
+.stickToTop {
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
 
 nav ul {
@@ -123,6 +149,10 @@ nav a {
 #content {
 	/*margin-top: 50px;
 	margin-bottom: 40px;*/
+}
+
+.addMarginTop {
+	margin-top: 40px;
 }
 
 section{

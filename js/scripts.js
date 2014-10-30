@@ -1,15 +1,17 @@
 /*
 	Sticky menubar
 */
-/*window.onscroll = function OnScroll() {
+window.onscroll = function OnScroll() {
 	var offset = 100; //height of header
 	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 	if ( scrollTop >= offset) {
 		document.querySelector('nav').classList.add('stickToTop');
+		document.querySelector('#content').classList.add('addMarginTop');
 	} else {
 		document.querySelector('nav').classList.remove('stickToTop');
+		document.querySelector('#content').classList.remove('addMarginTop');
 	}
-}*/
+}
 
 /**
  * Check a href for an anchor. If exists, and in document, scroll to it.
