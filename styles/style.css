@@ -105,10 +105,11 @@ nav {
 	font-family: octin;
 	height: 40px;
 	width: 100%;
-	/*position: fixed;*
-    top: 0px !important;*/
+	position: relative;
+    /*top: 0px !important;*/
 	background-color: #000;
 	line-height: 40px;
+	z-index: 1;
 }
 
 .stickToTop {
