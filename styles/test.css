@@ -101,7 +101,7 @@ nav li {
 	text-align: center;
 	white-space: nowrap;
 	display: table-cell;
-	width: 12.5%;
+	width: 16.666666%;
 }
 
 nav li:hover {
@@ -126,21 +126,17 @@ nav a {
 }
 
 section{
-	min-height: 100vh;
+	height: 100%;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	overflow: hidden;
-}
-
-.light
-{
-	background-color: rgba(127, 127, 127, 0.2);
+	overflow: auto;
 }
 
 .left
 {
 	width: 47.5%;
 	float: left;
+	line-height: 20px;
 	margin-left: 20px;
 }
 
@@ -148,33 +144,13 @@ section{
 {
 	width: 47.5%;
 	float: right;
+	line-height: 20px;
 	margin-right: 20px;
-}
-
-.content p
-{
-	font-size: 16pt;
-}
-
-.content h2
-{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.content table {
-	font-size: 16pt;
-	margin-bottom: 20px;
-	width: 100%;
-}
-
-.content table .tabletitle {
-	font-weight: bold;
 }
 
 #logo
 {
-	height: 480px;
+	height: 400px;
 	display: block;
 	margin: auto;
 }
