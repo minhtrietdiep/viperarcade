@@ -92,6 +92,21 @@ form{
 	border-radius: 10px;
 	width: 960px;
 }
+
+#tekst {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 32pt;
+	width: 960px;
+	margin-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+	border-radius: 10px;
+}
+
 #verstuur{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -120,5 +135,10 @@ form{
 		width: 80%;
 		font-size: 32pt;
 		height: auto;
+	}
+	
+	#tekst {
+		width: 80%;
+		font-size: 28pt;
 	}
 }

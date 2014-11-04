@@ -28,12 +28,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	Here be allround styling
 */
 html {
-	background: url('../img/middle-back.png') fixed center / cover;
+	/*background: url('../img/middle-back.png') fixed center / cover;*/
 }
 
 body {
 	color: #DEC538;
 	font-family: Sertig;
+}
+
+
+#bg {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url('../img/middle-back.png') fixed center / cover;
+	position: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,8 +105,9 @@ header {
 	height: 100px;
 	background-image: url(../img/headerva.jpg);
 	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
-	min-width: 1080px;
+	width: 100%;
 }
 
 #header {
@@ -111,6 +121,33 @@ header {
 	margin-top: 15px;
 	margin-left: 30px;
 	float: left;
+}
+
+
+/*
+	Hide Show Menu bar
+*/
+.show-menu {
+	font-family: "octin";
+	background-color: rgba(0,0,0, 0.9);
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+/*
+	Show menu when invisible checkbox is checked
+*/
+input[type=checkbox]:checked ~ nav{
+    display: inline-block;
 }
 
 nav {
@@ -289,5 +326,25 @@ footer {
 	Responsive!
 */
 @media screen and (max-width: 960px) {
-
+	.wrapper, #header, #menu, #footercontent {
+		width: 100%;
+	}
+	
+	nav {
+		height: auto;
+		display: none;
+		margin-top: 40px;
+	}
+		
+	.show-menu {
+		display:block;
+	}
+	
+	#menu li {
+		text-align: center;
+		display: block;
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+	}
 }
