@@ -28,12 +28,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	Here be allround styling
 */
 html {
-	background: url('../img/middle-back.png') fixed center / cover;
+/*	background: url('../img/middle-back.png') fixed center / cover;*/
 }
 
 body {
 	color: #DEC538;
 	font-family: Sertig;
+	background: url('../img/middle-back.png') fixed center / cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
