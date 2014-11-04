@@ -10,11 +10,14 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<form name="input" action="submit.php" method="get">
-			Naam <br><input type="text" name="playername" id="naam" /><br />
-			<input type="hidden" value="<?php echo $points; ?>" name="points" />
-			<input type="submit" value="Verstuur" id="verstuur" />
-			</form>
+			<div id="formwrapper">
+				<form name="input" action="submit.php" method="get">
+					Naam<br>
+					<input type="text" name="playername" id="naam" />
+					<input type="hidden" value="<?php echo $points; ?>" name="points" />
+					<input type="submit" value="Verstuur" id="verstuur" />
+				</form>
+			</div>
 		</div>
 	</body>
 	</html>

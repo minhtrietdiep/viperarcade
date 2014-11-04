@@ -62,19 +62,28 @@ a:hover{
 	color: #DEC538;
 }
 .wrapper{
+	display: table;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#formwrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+form{
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 200px;
-	width: 960px;
-	height: 500px;
-	background-color: rgba(0,0,0,0.8);
-	border: none;
-	border-radius: 10px;
-}
-form{
 	padding-top: 40px;
 	text-align: center;
 	font-size: 100px;
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+	border-radius: 10px;
+	width: 960px;
+	height: 480px;
 }
 #verstuur{
 	padding-left: 30px;
@@ -83,26 +92,26 @@ form{
 	background-color: rgba(0,0,0,0.0);
 	border: none;
 	border-radius: 10px;
+	margin-bottom: 30px;
 }
 #verstuur:hover{
 	background-color: rgba(30, 30, 30, 0.8);
 }
 #naam{
-	padding-left: 30px;
-	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 30px;
-	width: 700px;
+	width: 80%;
 	background-color: rgba(30, 30, 30, 0.8);
 	border: none;
 	border-radius: 10px;
 }
 
 @media screen and (max-width: 960px) {
-	.wrapper {
-		width: 100%;
-	}
-	
-	#naam {
+
+	form {
 		width: 80%;
+		font-size: 32pt;
+		height: auto;
 	}
 }
