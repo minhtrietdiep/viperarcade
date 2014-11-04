@@ -36,7 +36,7 @@ body {
 	height: 100%;
 	color: #DEC538;
 	font-family: Sertig;
-	background: url('../img/middle-back.png') fixed center / cover;
+	background: url('../img/middle-back.png') no-repeat fixed center center / cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +85,6 @@ form{
 	border: none;
 	border-radius: 10px;
 	width: 960px;
-	height: 480px;
 }
 #verstuur{
 	padding-left: 30px;
