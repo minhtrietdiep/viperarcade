@@ -36,7 +36,8 @@ body {
 	height: 100%;
 	color: #DEC538;
 	font-family: Sertig;
-	background: url('../img/middle-back.png') no-repeat fixed center center / cover;
+	background: url('../img/middle-back.png') fixed center / cover;
+	position: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
