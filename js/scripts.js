@@ -7,9 +7,13 @@ window.onscroll = function OnScroll() {
 	if ( scrollTop >= offset) {
 		document.querySelector('nav').classList.add('stickToTop');
 		document.querySelector('.show-menu').classList.add('stickToTop');
+		document.querySelector('#content').classList.add('addMarginTop');
+
 	} else {
 		document.querySelector('nav').classList.remove('stickToTop');
 		document.querySelector('.show-menu').classList.remove('stickToTop');
+		document.querySelector('#content').classList.remove('addMarginTop');
+
 	}
 }
 
@@ -27,6 +31,7 @@ function scroll_if_anchor(href) {
     // If our Href points to a valid, non-empty anchor, and is on the same page (e.g. #foo)
     // Legacy jQuery and IE7 may have issues: http://stackoverflow.com/q/1593174
     if(href.indexOf("#") == 0) {
+		document.getElementById("show-menu").checked = false;
         var $target = $(href);
         
         // Older browser without pushState might flicker here, as they momentarily
